@@ -69,13 +69,6 @@ public class StoneServiceImplTest {
   }
 
   @org.junit.Test
-  public void testReturnBadlyParams() {
-    int actual = stoneService.calculateValueOfNecklace(listStone, "abra");
-    int expected = -1;
-    assertEquals(expected, actual);
-  }
-
-  @org.junit.Test
   public void testcheckListsTrue() {
     List<Stone> listActual = new ArrayList<Stone>(stoneService.checkDiaposone(listStone));
     List<Stone> listExpected = new ArrayList<Stone>();

@@ -36,11 +36,10 @@ public class StoneServiceImpl implements Service {
   /**
    * Create necklace from empty list, which fill object Stone after that
    *
-   * @param list - empty list Stone
    * @return completed list Stone
    */
-  public List<Stone> createNecklace(List<Stone> list) {
-    list = new ArrayList();
+  public List<Stone> createNecklace() {
+   List<Stone> list = new ArrayList();
     list.add(new PreciousStone(BRILLIANT.name(), BRILLIANT.price(), BRILLIANT.clarity(), BRILLIANT.weight(),
         BRILLIANT.cut()));
     list.add(
@@ -80,8 +79,6 @@ public class StoneServiceImpl implements Service {
         total += stone.getWeight();
       } else if (text.equals("price")) {
         total += stone.getPrice();
-      } else {
-        total = -1;
       }
     }
     return total;

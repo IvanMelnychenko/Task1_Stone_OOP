@@ -5,7 +5,7 @@ import model.entity.Stone;
 
 public interface Service {
 
-  List<Stone> createNecklace(List<Stone> list);
+  List<Stone> createNecklace();
 
   List<Stone> sortingArrayByPrice(List<Stone> list);
 

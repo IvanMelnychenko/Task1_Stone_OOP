@@ -52,7 +52,7 @@ public class Controller {
    */
   public void getUnSortingListStone() {
     view.printStringInput(TextValue.STONE_BEFORE_SORTING);
-    model.getNecklace().setListStone(model.getStoneService().createNecklace(model.getNecklace().getListStone()));
+    model.getNecklace().setListStone(model.getStoneService().createNecklace());
     view.printList(model.getNecklace().getListStone());
     view.printMessage("");
   }
